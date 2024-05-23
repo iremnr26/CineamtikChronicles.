@@ -1,0 +1,179 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+     color: rgb(58, 58, 125);
+  
+}
+#logout i {
+  padding-right: 10px;
+
+}
+#index-banner{
+  width: 100%;
+}
+.container-w {
+  display: flex;
+  justify-content: center; /* Yatay hizalama */
+  align-items: center; /* Dikey hizalama */
+  height: 500px; /* Ekran yüksekliği kadar uzunluk */
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.welcomehead {
+  text-align: center; /* İçerik ortalamak için */
+  border: 1px;
+  border-radius: 50px;
+}
+
+.welcomehead div {
+  background-color: rgb(255, 254, 254);
+  font-size: 50px;
+  opacity: 1;
+  color: rgb(58, 58, 125);
+  width: 600px;
+  padding: 30px;
+ 
+}
+
+.parallax{
+  background-image: url(../img/bcki.jpg);  
+  width: 100%;  
+  /* opacity: 0.5; */
+
+}
+.row{
+  color: rgb(58, 58, 125);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  }
+  
+
+.light{
+font-size: 20px;
+color: rgb(58, 58, 125);
+
+  }
+.icon-block{
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease; /* Add a transition for smooth sliding */
+
+}
+.icon-block i{
+  color: rgb(58, 58, 125);
+
+}
+.icon-block:hover{
+  transform: translateX(20px); /* Slide the link to the right */
+
+}
+.icon-block a {
+  text-decoration: none;
+  color: rgb(58, 58, 125);
+  display: inline-block;
+}
+.footer {
+  background-color: rgb(58, 58, 125);
+  color: #fff;
+  padding: 20px 0;
+  height: max-content;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.container-f{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  padding-left: 30px;
+
+}
+
+.social-icons li:last-child,
+.additional-links li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease; /* Add a transition for smooth sliding */
+}
+
+.social-icons a:hover {
+  color: #ff0000; /* Change the color on hover */
+  transform: translateX(5px); /* Add a slight movement on hover */
+}
+
+p {
+  line-height: 2rem;
+}
+.usercon span{
+  padding: 10px;
+}
+
+.sidenav-trigger {
+  color: rgb(58, 58, 125);
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}

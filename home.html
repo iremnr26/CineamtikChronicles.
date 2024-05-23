@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" type="image/x-icon" href="./img/images.png">
+
+  <title>Cinematic Chronicles</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const username = localStorage.getItem("username");
+      document.getElementById("username").innerText = username;
+    });
+
+  </script>
+      <script src="https://kit.fontawesome.com/f37f768322.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Cinematic Chronicles</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#"> 
+           <div class="usercon"> <div class="user-info">
+            <i class="fa-regular fa-user"></i><span id="username"></span>
+                                 </div>
+            
+          </div></a></li>
+          <li>  <div id="logout"><a  href="index.html"><i class="fa-solid fa-right-from-bracket"></i>log out</a></div></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+      <div class="container-w">
+        <br><br>
+        <div class="welcomehead">
+          <div>WELCOME</div>
+           <br><br>
+          <div>to <br><br><br>  </div>
+          <div>Cinematic Chronicles</div>
+        </div>
+        
+
+      </div>
+    <div class="parallax"><img src="./img/bcki.jpg"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="fa-solid fa-film"></i></h2>
+            <h5 class="center"><a href="./all.html"><i class="fa-solid fa-arrow-right"></i>All Films</a></h5>
+            <p class="light">Explore a vast collection of cinematic treasures from various genres and eras. From timeless classics to modern masterpieces, discover your next movie night pick among our extensive list of films.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="fa-solid fa-star"></i></h2>
+            <h5 class="center"><a href="./top.html"><p><i class="fa-solid fa-arrow-right"></i>Top 20</p></a></h5>
+
+            <p class="light">Dive into the elite selection of our top-rated films, meticulously curated for your viewing pleasure. These cinematic gems have earned their ranks through stellar performances, gripping storytelling, and unforgettable moments.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="fa-solid fa-heart"></i></h2>
+            <h5 class="center"><a href="./mylist.html"><p><i class="fa-solid fa-arrow-right"></i>My Films</p></a></h5>
+
+            <p class="light">Create your personalized movie library with "My List." Easily bookmark your favorite films, must-watch classics, and upcoming releases. Whether you're a cinephile or casual viewer, keep track of the movies that resonate with you the most.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./img/bcki.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>About Us</h4>
+          <p class="left-align light">This site is a blog site generally related to movies, and the user is asked to log in on the first page. If the user does not have an account, he/she can log in after registering on the site. Afterwards, the user can generally list three different contents. These are the lists of all movies, the top 20 movies, and their own movie list. The user can add movies to his/her own list from the list that includes all movies and the top 20 movies. Users can also search for the name of the movie on these pages. The user can remove the movie from his own movie list or change the rating of the movie.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./img/bcki.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="footer">
+    <ul class="social-icons">
+      <li><a href="#">Özge Tontu</a></li>
+      <li><a href="#">İrem Nur Camcıoğlu</a></li>
+      <li><a href="#">Ufuk Zencirci</a></li>
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+    </ul>  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

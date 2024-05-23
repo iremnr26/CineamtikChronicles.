@@ -1,0 +1,193 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+#msg-container {
+    width: 80px; /* Mesaj kutusunun genişliği */
+    height: 600px;
+    position: fixed; /* Sabit pozisyon */
+    top: 15%; /* Yatayda ortala */
+    left: -10px; /* Sol kenardan 10 piksel içeride */
+    background-color: rgba(249, 249, 249, 0.9); /* Arka plan rengi */
+    color: #333; /* Metin rengi */
+    padding: 10px; /* İç boşluk */
+    /* border: 1px solid #ccc; Kenarlık */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+    text-align: center; /* Metni ortala */
+    font-size: 16px; /* Yazı tipi boyutu */
+    z-index: 9999; /* Diğer içeriklerin üzerinde görünecek */
+    transform: rotate(-90deg); /* 90 derece döndür */
+    transform-origin: left top; /* Döndürme merkezi */
+    white-space: nowrap; /* Satır sonu kesmeyi engelle */
+    margin-top: 50px;
+}
+#msg{
+    transform: rotate(+90deg); 
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color:  rgb(58, 58, 125);
+
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color:  rgb(58, 58, 125);
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    padding: 50px 0;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.movie {
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    margin: 10px;
+
+
+}
+
+.movie img {
+width: 250px;
+height: 400px;
+border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.movie h2 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.movie p {
+    font-size: 16px;
+    color: #666;
+    padding: 10px ;
+}
+
+.movie .rating {
+    font-weight: bold;
+    color:#a92929; /* Film puanı rengi */
+}
+
+.movie button {
+    margin-top: 10px;
+    background-color:rgb(58, 58, 125); /* Ekleme butonu arka plan rengi */
+    color: #e3e3e3; /* Ekleme butonu metin rengi */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Arka plan rengi için geçiş efekti */
+}
+
+.movie button:hover {
+    color: rgb(58, 58, 125);
+    background-color: #a92929; /* Ekleme butonu hover arka plan rengi */
+}
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.movie {
+    flex: 0 0 calc(25% - 20px); /* 4 sütuna böler, 20px iç boşluk bırakır */
+    margin-bottom: 20px; /* Alt boşluk ekler */
+}
+.search-container {
+    margin: 20px;
+    text-align: center;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: dodgerblue;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color:rgb(58, 58, 125);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Arka plan rengi için geçiş efekti */
+
+}
+
+.search-container button:hover {
+    background-color: #a92929;
+    
+}
+
+
+footer {
+    background-color: rgb(58, 58, 125);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="icon" type="image/x-icon" href="./img/images.png">
+    <!--Import materialize.css-->
+ <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  </head>
+  <body>
+    <script src="https://kit.fontawesome.com/f37f768322.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const username = localStorage.getItem("username");
+      document.getElementById("username").innerText = username;
+    });
+
+  </script>
+
+    <div class="container">
+  
+      <div class="welcome">
+        <div class="usercon"> <div class="user-info">
+          <i class="fa-regular fa-user"></i><span id="username"></span>
+        </div>
+      </div>
+
+      <div class="welcomehead">
+        WELCOME <br />
+        to MY FILM BLOG
+      </div>
+
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="all.html"><i class="fa-solid fa-film"></i><p>All Films</p></a></li>
+            <li><a href="top.html"><i class="fa-solid fa-star"></i><p>Top 20</p></a></li>
+            <li><a href="mylist.html"><i class="fa-solid fa-heart"></i><p>My Films</p></a></li>
+        </ul>
+      </div>
+    </div>
+   
+  </div>
+  <footer class="footer">
+    <ul class="social-icons">
+      <li><a href="#">Özge Tontu</a></li>
+      <li><a href="#">İrem Nur Camcıoğlu</a></li>
+      <li><a href="#">Ufuk Zencirci</a></li>
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+    </ul>  </footer>
+
+ 
+    
+  </body>
+</html>

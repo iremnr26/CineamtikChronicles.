@@ -1,0 +1,219 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+#msg-container {
+    width: 80px; 
+    height: 400px; 
+    position: fixed; 
+    top: 15%; /* Yatayda ortala */
+    left: -10px; 
+    background-color: rgba(249, 249, 249, 0.9); 
+    color: #333; 
+    padding: 10px; 
+    border-radius: 5px; 
+    text-align: center; 
+    font-size: 16px; 
+    z-index: 9999; /* Diğer içeriklerin üzerinde görünecek */
+    transform: rotate(-90deg); /* 90 derece döndür */
+    transform-origin: left top; /* Döndürme merkezi */
+    white-space: nowrap; /* Satır sonu kesmeyi engelle */
+}
+#msg{
+    transform: rotate(+90deg); 
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color:  rgb(58, 58, 125);
+
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color:  rgb(58, 58, 125);
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    padding: 50px 0;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.movie {
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    margin: 10px;
+
+
+}
+
+.movie img {
+    width: 250px;
+    height: 400px;
+    border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+.movie h2 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.movie p {
+    font-size: 16px;
+    color: #666;
+    padding: 10px ;
+}
+
+.movie .rating {
+    font-weight: bold;
+    color:#a92929; 
+}
+
+.movie button {
+    margin-top: 10px;
+    background-color:rgb(58, 58, 125);
+    color: #e3e3e3; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.movie button:hover {
+    color: rgb(58, 58, 125);
+    background-color: #a92929; 
+}
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.movie {
+    flex: 0 0 calc(25% - 20px); /* 4 sütuna böler, 20px iç boşluk bırakır */
+    margin-bottom: 20px; /* Alt boşluk ekler */
+}
+
+.rating-dialog {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.rating-dialog-content {
+    background-color: #fefefe;
+    height: 200px;
+    width: 100px;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    font-size: 50px;
+}
+#newRating {
+    width: 100px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box; 
+}
+
+.rating-dialog-content button{
+    margin-top: 10px;
+    background-color:rgb(58, 58, 125); 
+    color: #e3e3e3; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+.rating-dialog-content button:hover{
+    color: rgb(58, 58, 125);
+    background-color: #a92929; 
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: rgb(58, 58, 125);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
